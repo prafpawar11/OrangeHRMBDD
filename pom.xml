@@ -13,6 +13,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 	<dependencies>
 
@@ -113,8 +115,10 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suitXmlFile>testng.xml</suitXmlFile>
-						
+
 					</suiteXmlFiles>
+					<source>17</source>
+					<target>17</target>
 				</configuration>
 			</plugin>
 		</plugins>
