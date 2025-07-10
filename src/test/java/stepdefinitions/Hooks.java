@@ -3,6 +3,7 @@ package stepdefinitions;
 import com.baselayer.BaseClass;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.BeforeAll;
 
 public class Hooks extends BaseClass {
@@ -19,4 +20,10 @@ public class Hooks extends BaseClass {
 
 	}
 
+	
+	@AfterAll
+	public static void abc()
+	{
+		driver.quit();
+	}
 }
